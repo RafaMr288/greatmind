@@ -10,7 +10,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+    background: linear-gradient(135deg, #1a2a6c, #b21f1f, #454ec5);
     color: white;
   }
   
@@ -100,12 +100,80 @@
     width: 100%;
     align-items: center;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
   }
+
+  .supply div {
+    width: 300px;
+  }
+
+.supply div button {
+  border: none;
+  padding: 10px;
+  background-color: #00a2d479;
+  font-size: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.supply div button:hover {
+  background-color: #0069f1;
+}
+
+.howbuy {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.howbuy div {
+  display: grid;
+  grid-template-columns: repeat(2, 250px);
+  grid-template-rows: repeat(2, 150px); 
+  gap: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  flex-wrap: wrap;
+}
+
+.howbuy div div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+  
+.supply div div {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.exchanges {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.exchanges div img {
+  box-shadow: 0 4px 6px rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+}
 
   @media screen and (max-width: 600px) {
     .menu {
         margin-top: 10px;
+        justify-content: center;
     }
   }
 
@@ -124,6 +192,10 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+    }
+    .howbuy div {
+      display: flex;
+      width: 350px;
     }
 
   }
